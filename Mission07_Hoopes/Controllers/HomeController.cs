@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Mission06_Hoopes.Models;
 using SQLitePCL;
 using System.Diagnostics;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Mission06_Hoopes.Controllers
 {
