@@ -2,7 +2,7 @@
     ViewData["Title"] = "Add Films";
 }
 
-@model MovieSub
+@model MovieSubmission
 
 <head>
     <style>
@@ -16,19 +16,8 @@
     <h4 class="center_text">I have a database linked to this website filled with 420 movies that I have seen, but I am always adding to this large film collection. Everytime that I watch a movie, I will add to this database by filling out the form below.</h4>
 
     <form method="post">
-        <input type="hidden" asp-for="MovieId" />
-
-        <label asp-for="CategoryId">Category: </label><br />
-
-        <select asp-for="CategoryId">
-
-            <option value="">Select a Category</option>
-            @foreach (Category c in ViewBag.Categories)
-            {
-                <option value="@c.CategoryId">@c.CategoryName</option>
-            }
-
-        </select><br />
+        <label asp-for="Category">Category:</label> <br />
+        <input asp-for="Category" type="text" id="category" name="category" required ><br />
 
         <label asp-for="Title">Title:</label><br />
         <input asp-for="Title" type="text" id="title" name="title" required><br />
@@ -55,14 +44,8 @@
         </select>
 
 
-        <label asp-for="LentTo">Lent to:</label><br />
-        <input asp-for="LentTo"><br />
-
-        <label asp-for="CopiedToPlex">Copied to Plex:</label><br />
-        <select asp-for="CopiedToPlex">
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-        </select><br />
+        <label asp-for="Lent_To">Lent to:</label><br />
+        <input asp-for="Lent_To"><br />
 
         <label asp-for="Notes">Notes:</label><br />
         <input asp-for="Notes" id="notes" name="notes" maxlength="25"><br /><br />

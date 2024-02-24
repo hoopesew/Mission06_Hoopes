@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">The Joel Hilton Film Collection</h1>
+</div>
+
+<div class="text-center">
+    <h2>Lights, Camera, Action!</h2>
+    <img src="~/joelhiltonheadshot.jpg" height="400" />
+</div>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1; 
+            padding: 20px; 
+        }
+        
+        .column:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        .center_text{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <h3 class= "center_text">Art</h3>
+            <p class="center_text">Movies are one of my favorite way for people to showcase their artistic abilities. Movies really are art! From the way the actors flawlessly embod the character they play to the way directors can make you feel a certain way, a movie is art in motion.</p>
+    </div>
+        <div class="column">
+            <h3 class= "center_text">Entertainment</h3>
+            <p class="center_text">Movies are also entertainment. On a Monday morning after logging countless hours on LetterBoxd posting my movie opinions, nothing beats turning on a Martin Scorcese film while I munch on some pancakes.</p>
+    </div>
+</div>
+
+</body>
+
+
+
+
+
+
+
